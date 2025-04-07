@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterxhmod",
+	"version": "${version}",
+	"name": "BetterXHMod",
+	"description": "这是更好的小行模组的描述!",
+	"authors": [
+		"XiaoHang!"
+	],
+	"contact": {
+		"homepage": "https://space.bilibili.com/440398982/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betterxhmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.xiaohang.betterxhmod.BetterXHMod"
+		],
+		"fabric-datagen": [
+			"com.xiaohang.betterxhmod.BetterXHModDataGenerator"
+		],
+		"client": [
+			"com.xiaohang.betterxhmod.BetterXHModClient"
+		]
+	},
+	"mixins": [
+		"betterxhmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
