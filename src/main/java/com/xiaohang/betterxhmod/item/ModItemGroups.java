@@ -24,13 +24,13 @@ public class ModItemGroups {
                 ItemGroup.create(ItemGroup.Row.TOP,7)
                         .displayName(Text.translatable("itemGroup.betterxh_group"))
                         .icon(() -> new ItemStack(ModItems.XIAOHANG))
-                        .entries((displayContext, XIAOHANG)->{
+                        .entries((displayContext, entries)->{
                             entries.add(ModItems.CUSTOM_ITEM);
                                 }).build());
     }
     */
 
-    public static final ItemGroup TUTORIAL_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(BetterXHMod.MOD_ID, "tutorial_group"),
+    public static final ItemGroup XIAOHANG_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(BetterXHMod.MOD_ID, "xiaohang_group"),
             ItemGroup.create(null, -1).displayName(Text.translatable("itemGroup.betterxh_group"))
                     .icon(() -> new ItemStack(ModItems.XIAOHANG))
                     .entries((displayContext, entries) -> {
