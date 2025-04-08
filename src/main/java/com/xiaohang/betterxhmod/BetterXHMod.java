@@ -1,5 +1,6 @@
 package com.xiaohang.betterxhmod;
 
+import com.xiaohang.betterxhmod.blocks.ModBlocks;
 import com.xiaohang.betterxhmod.item.ModItemGroups;
 import com.xiaohang.betterxhmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -24,6 +25,8 @@ public class BetterXHMod implements ModInitializer {
 
 		ModItems.initialize();
 		ModItemGroups.registerModItemGroups();
+
+		ModBlocks.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}

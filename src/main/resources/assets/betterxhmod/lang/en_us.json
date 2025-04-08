@@ -1,4 +1,6 @@
 {
-  "item.betterxhmod.custom_item": "XiaoHang",
-  "itemGroup.betterxh_group": "BetterXh Group"
+  "item.betterxhmod.xiaohang": "XiaoHang",
+  "itemGroup.betterxh_group": "BetterXh Group",
+
+  "block.betterxhmod.xiaohang_block": "XiaoHang_Block"
 }

@@ -11,14 +11,14 @@ import java.util.function.Function;
 
 public final class ModItems {
 
-    public static final Item CUSTOM_ITEM = registerItems("custom_item", Item::new, new Item.Settings());
+    public static final Item XIAOHANG = register("xiaohang", Item::new, new Item.Settings());
 
-    public static Item registerItems(String path, Function<Item.Settings,Item> factory,Item.Settings settings){
+    public static Item register(String path, Function<Item.Settings,Item> factory,Item.Settings settings){
             final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterXHMod.MOD_ID,path));
             return Items.register(registryKey,factory,settings);
     }
 
     public static void initialize() {
-        BetterXHMod.LOGGER.info("Yes!Hello!Fabric!");
+        BetterXHMod.LOGGER.info("Yes!Hello!Items!");
     }
 }

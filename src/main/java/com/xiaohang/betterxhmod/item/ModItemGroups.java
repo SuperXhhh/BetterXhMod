@@ -1,6 +1,7 @@
 package com.xiaohang.betterxhmod.item;
 
 import com.xiaohang.betterxhmod.BetterXHMod;
+import com.xiaohang.betterxhmod.blocks.ModBlocks;
 import net.minecraft.advancement.criterion.EnterBlockCriterion;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -22,8 +23,8 @@ public class ModItemGroups {
         Registry.register(Registries.ITEM_GROUP,BETTERXH_GROUP,
                 ItemGroup.create(ItemGroup.Row.TOP,7)
                         .displayName(Text.translatable("itemGroup.betterxh_group"))
-                        .icon(() -> new ItemStack(ModItems.CUSTOM_ITEM))
-                        .entries((displayContext, entries)->{
+                        .icon(() -> new ItemStack(ModItems.XIAOHANG))
+                        .entries((displayContext, XIAOHANG)->{
                             entries.add(ModItems.CUSTOM_ITEM);
                                 }).build());
     }
@@ -31,9 +32,10 @@ public class ModItemGroups {
 
     public static final ItemGroup TUTORIAL_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(BetterXHMod.MOD_ID, "tutorial_group"),
             ItemGroup.create(null, -1).displayName(Text.translatable("itemGroup.betterxh_group"))
-                    .icon(() -> new ItemStack(ModItems.CUSTOM_ITEM))
+                    .icon(() -> new ItemStack(ModItems.XIAOHANG))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.CUSTOM_ITEM);
+                        entries.add(ModItems.XIAOHANG);
+                        entries.add(ModBlocks.XIAOHANG_BLOCK);
                     }).build());
     // 初始化方法
     public static void registerModItemGroups() {
